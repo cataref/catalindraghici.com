@@ -100,7 +100,7 @@ h3 { font-size: 1.25rem; }
 .hero h1 { color: #FFFFFF; margin-bottom: 20px; }
 .hero h1 em { font-style: normal; color: #7DD3FC; font-weight: 800; }
 .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.95); line-height: 1.75; margin-bottom: 32px; max-width: 560px; }
-.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+.hero-btns { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; margin-top: 8px; }
 .btn-white { font-family: var(--fb); font-size: 0.9rem; font-weight: 700; background: linear-gradient(135deg, #EF4444, #DC2626); color: #FFFFFF; border: none; padding: 14px 32px; border-radius: var(--radius-sm); cursor: pointer; transition: all var(--transition); box-shadow: 0 4px 20px rgba(239,68,68,0.4); letter-spacing: -0.01em; }
 .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(239,68,68,0.5); }
 .btn-outline { font-family: var(--fb); font-size: 0.9rem; font-weight: 600; background: transparent; color: #FFFFFF; border: 2px solid #EF4444; padding: 13px 32px; border-radius: var(--radius-sm); cursor: pointer; transition: all var(--transition); letter-spacing: -0.01em; }
@@ -113,7 +113,7 @@ h3 { font-size: 1.25rem; }
 .hero-photo-placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; color: rgba(255,255,255,0.3); font-size: 0.85rem; }
 
 /* Floating dashboard cards on hero */
-.float-card { position: absolute; background: rgba(255,255,255,0.12); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.18); border-radius: 12px; padding: 14px 18px; z-index: 6; animation: floatCard 6s ease-in-out infinite; }
+.float-card { position: absolute; background: rgba(255,255,255,0.18); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.25); border-radius: 12px; padding: 14px 18px; z-index: 6; animation: floatCard 6s ease-in-out infinite; }
 .float-card.fc-1 { bottom: 40px; left: -30px; animation-delay: 0s; }
 .float-card.fc-2 { top: 20px; right: -20px; animation-delay: 2s; }
 .float-card.fc-3 { top: 50%; right: -40px; animation-delay: 4s; }
@@ -121,12 +121,12 @@ h3 { font-size: 1.25rem; }
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
 }
-.fc-label { font-size: 0.62rem; color: rgba(255,255,255,0.9); letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; }
-.fc-value { font-family: var(--fd); font-size: 1.15rem; color: #FFFFFF; margin-top: 2px; }
+.fc-label { font-size: 0.62rem; color: #FFFFFF; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; }
+.fc-value { font-family: var(--fd); font-size: 1.15rem; color: #FFFFFF; margin-top: 2px; font-weight: 700; }
 .fc-bar { display: flex; gap: 3px; margin-top: 8px; }
 .fc-bar-seg { height: 4px; border-radius: 2px; }
 .fc-dots { display: flex; gap: 4px; margin-top: 8px; }
-.fc-dot { width: 8px; height: 8px; border-radius: 50%; opacity: 0.7; }
+.fc-dot { width: 8px; height: 8px; border-radius: 50%; opacity: 1; }
 
 /* --- Expertise Cards Row --- */
 .expertise-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; padding: 40px 0; margin-top: -40px; position: relative; z-index: 10; }
